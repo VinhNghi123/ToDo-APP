@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Dark mode configuration*/
+@theme {
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  
+  --color-purple-600: #9333ea;
+  --color-purple-700: #7c3aed;
+  --color-purple-800: #6b21a8;
+  
+  --color-pink-600: #db2777;
+  --color-pink-700: #be185d;
+  --color-pink-800: #9d174d;
+  
+  --color-green-500: #10b981;
+  --color-green-600: #059669;
+  --color-green-900: #064e3b;
+  
+  --color-blue-600: #2563eb;
+  --color-blue-900: #1e3a8a;
+  
+  --color-red-500: #ef4444;
+  --color-red-700: #b91c1c;
+  --color-red-900: #7f1d1d;
+  
+  --color-yellow-400: #fbbf24;
+  --color-yellow-50: #fffbeb;
+  --color-yellow-200: #fef3c7;
+  --color-yellow-700: #a16207;
+  --color-yellow-800: #92400e;
+  --color-yellow-900: #78350f;
+}
+
+/* Dark mode styles */
+.dark {
+  --background: #111827;
+  --foreground: #f9fafb;
+}
+
+.dark body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
